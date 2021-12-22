@@ -89,7 +89,7 @@ IaaS，PaaS，系统和容器编排部署配置和模板（docker-compose，kube
 外部帮助程序工具，分叉的代码和其他第三方工具（例如Swagger UI）。
 
 #### /githooks
-githooks
+githooks git脚本的勾子 脚本
 
 #### /assets
 与资源库一起使用的其他资产（图像，徽标等）。
