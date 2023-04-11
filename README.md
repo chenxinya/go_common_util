@@ -3,35 +3,56 @@ go工具类,介绍golang项目目录结构,以及一些常用的工具类
 
 ## go 工具类介绍
 
+### linuxShell.go 
+linuxShell.go 是一个linux shell命令的封装,可以执行linux命令,并且可以获取命令的输出,以及错误信息
+方法列表为：
+```go
+//执行shell命令
+func (l *LinuxShell) ExecShell(cmd string) (string, error)()
+```
+
+### logger.go
+logger.go 是一个日志工具类,可以将日志输出到文件,也可以输出到控制台,也可以同时输出到文件和控制台
+方法列表为：
+```go
+//初始化日志
+func (l *Logger) InitLogger(logPath string, logName string, logLevel string, logConsole bool) error
+//获取日志实例
+func (l *Logger) GetLogger() *logrus.Logger
+//设置日志级别
+func (l *Logger) SetLogLevel(logLevel string) error
+//设置日志输出到文件
+func (l *Logger) SetLogFile(logPath string, logName string) error
+```
 
 ## go 目录介绍
 #### 目录介绍
 
-├─api \
-├─assets\
-├─build\
-│  ├─ci\
-│  └─package\
-├─cmd\
-│  └─app\
-├─configs\
-├─deployments\
-├─docs\
-├─examples\
-├─githooks\
-├─init\
-├─internal\
-│  └─app\
-│      └─_your_app_\
-├─scripts\
-├─test\
-├─third_party\
-├─tools\
-├─web\
-│  ├─app\
-│  ├─static\
-│  └─template\
-└─website\
+├─ api \
+├─ assets\
+├─ build\
+├─ ├─ ci\
+├─ └─ package\
+├─ cmd\
+├─ └─ app\
+├─ configs\
+├─ deployments\
+├─ docs\
+├─ examples\
+├─ githooks\
+├─ init\
+├─ internal\
+├─ └─ app\
+├─     └─ _your_app_\
+├─ scripts\
+├─ test\
+├─ third_party\
+├─ tools\
+├─ web\
+├─ ├─ app\
+├─ ├─ static\
+├─ └─ template\
+└─ website\
 
 ### 基础目录
 
