@@ -1,34 +1,37 @@
 # go_common_util
-go工具类
+go工具类,介绍golang项目目录结构,以及一些常用的工具类
+
+## go 工具类介绍
+
 
 ## go 目录介绍
 #### 目录介绍
-.
-├─api 
-├─assets
-├─build
-│  ├─ci
-│  └─package
-├─cmd
-│  └─app
-├─configs
-├─deployments
-├─docs
-├─examples
-├─githooks
-├─init
-├─internal
-│  └─app
-│      └─_your_app_
-├─scripts
-├─test
-├─third_party
-├─tools
-├─web
-│  ├─app
-│  ├─static
-│  └─template
-└─website
+
+├─api \
+├─assets\
+├─build\
+│  ├─ci\
+│  └─package\
+├─cmd\
+│  └─app\
+├─configs\
+├─deployments\
+├─docs\
+├─examples\
+├─githooks\
+├─init\
+├─internal\
+│  └─app\
+│      └─_your_app_\
+├─scripts\
+├─test\
+├─third_party\
+├─tools\
+├─web\
+│  ├─app\
+│  ├─static\
+│  └─template\
+└─website\
 
 ### 基础目录
 
